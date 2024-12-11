@@ -1,0 +1,87 @@
+/* ヘッダーのスタイル */
+header {
+    background-color: #2C8F4E; /* キィニチっぽい緑色 */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* メインコンテンツ */
+main {
+    padding: 20px;
+}
+
+/* エピソードセクション */
+.episode-content {
+    display: flex;
+    gap: 20px;
+}
+
+.episode-text {
+    max-width: 60%;
+}
+
+.episode-image {
+    flex-shrink: 0;
+    max-width: 35%;
+}
+
+.episode-image img {
+    width: 50%;  /* 画像の幅を80%に縮小 */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 吹き出しのスタイル */
+.speech-bubble {
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    max-width: 70%;
+    margin-top: 20px;
+    line-height: 1.5;
+    border: 3px solid #2C8F4E;  /* ヘッダーと同じ緑色で枠線を追加 */
+}
+
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;   /* 三角形の上辺を少し大きく */
+    border-bottom: 18px solid transparent;  /* 三角形の下辺を少し大きく */
+    border-left: 18px solid #2C8F4E;    /* 三角形の縁をヘッダーと同じ緑色に変更 */
+    transform: translateY(-50%);
+}
+
+/* 動画のスタイル */
+.video-content iframe {
+    width: 100%;
+    height: 500px; /* 高さを500pxに指定 */
+    max-width: 100%; /* 親要素に合わせてサイズ調整 */
+    border: none; /* 枠線なし */
+}
+
+/* スクロールアニメーションのスタイル */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* アハウの画像のアニメーション */
+#ahau-image {
+    transition: transform 0.5s ease-in-out;
+}
+
+#ahau-image:hover {
+    transform: scale(1.1);
+}
