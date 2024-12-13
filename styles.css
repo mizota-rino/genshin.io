@@ -4,12 +4,46 @@ header {
     padding: 20px;
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 31px;  /* 少し文字を大きく変更 */
 }
 
 /* メインコンテンツ */
 main {
     padding: 20px;
+}
+
+/* キャラクター情報セクションのh1タグ */
+.character-info h1 {
+    font-size: 32px;  /* 文字サイズを大きく */
+}
+
+.character-details p strong {
+    font-size: 20px; /* h3と同じ大きさに設定 */
+}
+
+.character-details p {
+    font-size: 18px; /* 元々のサイズが16pxの場合、少し大きく */
+    line-height: 1.6; /* 行間を適度に広げることで可読性を向上 */
+}
+
+/* 能力と戦術セクションのh2タグ */
+.abilities h2 {
+    font-size: 32px;  /* h1と同じ大きさに設定 */
+}
+
+.text-content p strong {
+    font-size: 23px; /* 少し大きくする */
+}
+
+/* text-content 内の p タグの文字サイズを少し大きくする */
+.text-content p {
+    font-size: 18px; /* 元々のサイズが16pxの場合、少し大きく */
+    line-height: 1.6; /* 行間を適度に広げることで可読性を向上 */
+}
+
+/* エピソードセクションのh3タグ */
+.episode h3 {
+    font-size: 32px;  /* h1と同じ大きさに設定 */
 }
 
 /* エピソードセクション */
@@ -20,6 +54,11 @@ main {
 
 .episode-text {
     max-width: 60%;
+}
+
+.speech-bubble p {
+    font-size: 18px; /* 元々のサイズが16pxの場合、少し大きく */
+    line-height: 1.6; /* 行間を適度に広げることで可読性を向上 */
 }
 
 .episode-image {
