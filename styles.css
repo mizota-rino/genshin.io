@@ -7,6 +7,17 @@ header {
     font-size: 31px;  /* 少し文字を大きく変更 */
 }
 
+/* text-content 内の p タグの文字サイズを少し大きくする */
+.text-content p {
+    font-size: 18px; /* 元々のサイズが16pxの場合、少し大きく */
+    line-height: 1.6; /* 行間を適度に広げることで可読性を向上 */
+}
+
+/* header タグの文字サイズを少し大きくする */
+header {
+    font-size: 36px; /* 元々のサイズが31pxの場合、少し大きく */
+}
+
 /* メインコンテンツ */
 main {
     padding: 20px;
